@@ -96,6 +96,7 @@ function showJobs() {
           jobResultsDiv.appendChild(separator);
           i += 1;
         });
+        window.scrollTo(0, window.innerHeight);
       } else {
         const head = document.createElement("h2");
         head.textContent = "Sorry, No Jobs Match Your Criteria and Resume!";

@@ -21,32 +21,39 @@
         margin-left: 10px;
         margin-right: 10px;
         padding: 10px;
+        border: 2px solid grey;
         background-color: whitesmoke;
+        border-radius: 10px;
     }
     input{
         padding: 10px;
         background-color: whitesmoke;
         margin-right: 10px;
+        border: 2px solid grey;
+        border-radius: 10px;
     }
+    
 
     *{
         border: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
     }
     textarea{
         display: block;
         /* border: 1px solid grey; */
-        font-size: 16px;
+        font-size: 24px;
         padding: 20px;
         width: 100%;
         margin-top: 40px;
-        /* margin-left: 200px;
-        margin-right: 200px; */
+        border: 2px solid grey;
         background-color: whitesmoke;
         resize: none;
+        border-radius: 25px;
     }
     h1{
         margin: auto;
-        margin-left: 10%;
+        margin-left: 25%;
+        font-weight: bold;
         margin-bottom: 40px;
     }
     h4{
@@ -55,23 +62,40 @@
         font-weight: bold;
     }
     button{
-        padding: 10px;
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-top: 25px;
+        padding-bottom: 25px;
         margin-top: 50px;
-        margin-left: 40%;
+        margin-left: 35%;
+        color: slategray;
+        font-weight: bold;
+        font-size: 32px;
+        background-color: #eeeeee;
+        border-radius: 30px;
+        border: 2px solid grey;
+    }
+    button:hover{
+        background-color: slategray;
         color: whitesmoke;
-        background-color: darkgray;
-        border-radius: 20px;
     }
     p{
         font-size:18px;
         margin-left: 30px;
+    }
+    h2{
+        color: black;
+        font-weight: bold;
+        margin-top: 100px;
+        font-size: 42px;
+        margin-bottom: 25px;
     }
   </style>
   
 </head>
 
 <body>
-    <h1>Job Search powered by ElasticSearch! - Dhruv Amit Shah</h1>
+    <h1>Job Search powered by ElasticSearch!</h1>
   I am looking for a <select id="workType"></select> role requiring 
   <input type="number" id="experience" name="experience" min="0" max="40" step="1" value="0" onkeydown="return false;"> years of experience having a salary around $
   
