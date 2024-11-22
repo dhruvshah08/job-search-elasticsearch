@@ -16,7 +16,7 @@ d3.csv(path).then((data) => {
 
   set_of_work_type.forEach((type) => {
     const option = document.createElement("option");
-    option.value = type.toLowerCase();
+    option.value = type;
     option.text = type; 
     workTypeSelect.appendChild(option); 
   });
@@ -27,6 +27,7 @@ function showJobs() {
   const experience = document.getElementById("experience").value;
   const salary = document.getElementById("desiredSalary").value;
   const workType = document.getElementById("workType").value;
+  console.log(experience + " and " + salary);
   const requestData = {
     resume: resume,
     experience: experience,
@@ -90,12 +91,11 @@ function showJobs() {
           companySize.textContent = `Company Size: ${job._source["Company Size"]} people`;
           jobDiv.appendChild(companySize);
 
-          const separator = document.createElement("hr"); // Horizontal line
+          const separator = document.createElement("hr");
           jobResultsDiv.appendChild(jobDiv);
           jobResultsDiv.appendChild(separator);
           i += 1;
         });
-        // You can add code here to display the jobs on the webpage
       } else {
         const head = document.createElement("h2");
         head.textContent = "Sorry, No Jobs Match Your Criteria and Resume!";
