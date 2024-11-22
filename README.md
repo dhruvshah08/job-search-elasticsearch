@@ -11,7 +11,7 @@ This tool enables users to upload their resumes and discover the top 10 job oppo
 <p style="font-family: 'Times New Roman', Times, serif;">
 1. Clone this repository<br>
 2. Run ElasticSearch and Kibana locally.<br>
-3. Run <b><i>upload_data.py</i></b> to add the dataset to the Elasticsearch index<br>
-4. Open the terminal and run <b><i>backend.py</i></b><br>
-5. Open the <b><i>index.html</i></b> file in the browser to run the application!<br>
+3. Run <b>upload_data.py</b> to add the dataset to the Elasticsearch index<br>
+4. Open the terminal and run <b>backend.py</b><br>
+5. Open the <b>index.html</b> file in the browser to run the application!<br>
 </p>
